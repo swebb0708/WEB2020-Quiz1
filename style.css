@@ -1,0 +1,73 @@
+body{
+    background-image:linear-gradient(white, lightblue, blue);
+}
+.mountains{
+   position:relative;
+   top:13px;
+   left:-13px;
+   width:1325px;
+   height: 820px; 
+}
+.sun{
+    border-radius: 50%;
+    background-image: radial-gradient(circle, red, orange, yellow);
+    position: absolute;
+    top:50px;
+    left:50px;
+    width:150px;
+    height:150px;
+    animation: brighter 30s infinite;   
+}
+
+
+
+.cloud1{
+    position: absolute;
+    top:50px;
+    left: 231px;
+    animation: move 30s;
+}
+
+.cloud2{
+    position: absolute;
+    top:-158px;
+    left: 648px;
+    animation: move 20s;
+}
+
+.cloud3{
+    position: absolute;
+    top:50px;
+    left: -184px;
+    animation: move 20s;
+}
+
+
+
+@keyframes brighter{
+    0% {
+        filter: brightness(100%)
+    }
+    25% {
+        filter: brightness(150%)
+    }
+    50% {
+        filter: brightness(300%)
+    }
+    75% {
+        filter: brightness(150%)
+    }
+    100%{
+        filter: brightness(105%)
+    }
+}
+
+@keyframes move{
+    from{transform: translateX(0px) }
+    to{transform:translateX(-200px) }
+}
+
+@keyframes move-further{
+    from{transform: translateX(0px) }
+    to{transform:translateX(-300px) }
+}
